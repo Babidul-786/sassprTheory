@@ -1,0 +1,362 @@
+// variables
+
+$primary-font :'Raleway', sans-serif;;
+$primary-color :#4e82be;
+$white-color : #fff;
+$black-color :#000;
+
+@mixin flex_property {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $primary-font;
+}
+
+header
+{
+    width: 100%;
+    height: 60vh;
+    background-image: url(../img/theory/dd.jpg);
+    background-size: cover;
+    border-top: 9px solid #4e82be;
+
+    nav{
+       max-width: 1100px;
+        margin: 0 auto;
+        @include flex_property();
+        position: relative;
+        margin-top: 25px;
+       
+        section{
+            width: 20%;
+
+            h4{
+                font-weight: 100;
+                color: $white-color;
+                font-size: 28px
+            }
+        }
+
+        ul{
+            @include flex_property();
+
+
+            li{
+                margin-right: 30px;
+                list-style: none;
+            }
+
+         }
+         a{
+             text-decoration: none;
+             color: $white-color;
+             font-size: 18px;
+         }
+
+    }
+
+    .banner_text{
+        width: 70%;
+        margin: 0 auto;
+        color: $white-color;
+        position: relative;
+        top:10%;
+        text-align: center;
+
+        h1{
+            font-size: 48px;
+            font-weight: 200;
+        
+        }
+        h6{
+            font-size: 18px;
+            margin-top: 20px;
+            font-weight: 100;
+        }
+    }
+
+
+}
+
+.fa-navicon
+{
+    font-size: 23px;
+    background: none;
+    color:$white-color;
+   display: none;
+}
+
+
+// header ends
+
+// second_section st
+
+.more
+{
+    width: 100px;
+    height: 50px;
+    background: #2f619b;
+    color: $white-color;
+    padding: 8px;
+    font-size: 17px;
+    font-family: $primary-font;
+
+}
+
+.same_width
+{
+    width: 80%;
+    margin: 0 auto;
+    padding: 60px 0px;
+    @include flex_property();
+
+    section{
+        width: 30%;
+      
+        h2{
+            font-weight: 100;
+            color: #2f619b;
+        }
+
+        p{
+            color: grey;
+            line-height: 26px;
+            padding: 20px 0px;
+        }
+    }
+
+    hr{
+        width: 1px;
+        background: grey;
+    }
+
+}
+
+// team_sectio starts
+
+.team_section
+{
+    width: 100%;
+    background: #2f619b;
+    padding: 75px 0px;
+
+    .Ispum{
+       
+        text-align: center;
+       
+
+        h2{
+            font-weight: 100;
+            margin-bottom: 15px;
+            color: $white-color;
+           
+        }
+        p{
+            color: silver;
+        }
+    }
+
+
+    .Team
+    {
+        width: 80%;
+        margin: 0 auto;
+        @include flex_property();
+        margin-top: 30px;
+        text-align: center;
+        color: $white-color;
+       
+
+        section{
+            width: 23%;
+            border: 1px solid silver;
+
+            img{
+              
+                border-radius: 100%;
+                padding: 25px 0px;
+            }
+
+            h3{
+                font-weight: 100;
+            }
+            p{
+                padding-bottom: 30px;
+            }
+
+        }
+
+    }
+
+}
+
+// third_section starts
+
+.third_section
+ {
+    padding: 70px 0px;
+
+    .nunc{
+        text-align: center;
+    
+    
+    
+    h2{
+        font-weight: 100;
+        color: #4e82be;
+        margin-bottom: 10px;
+    }
+    p{
+        color: grey;
+    }
+}
+
+    .two_image
+    {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 30px;
+        @include flex_property();
+    
+
+        section{
+            width: 45%;
+
+            img{
+                width: 100%;
+            }
+
+            h3{
+                color: #2e6db4;
+                margin-top: 15px;
+                font-weight: 100;
+                font-size: 27px;
+            }
+
+            p{
+                color: grey;
+                padding: 20px 0px;
+                line-height: 26px;
+            }
+        }
+    }
+
+}
+
+// footer starts
+
+footer{
+    width: 80%;
+    margin: 0 auto;
+    @include flex_property();
+    border-top: 1px solid grey;
+
+    section{
+        padding-top: 30px;
+        margin-bottom: 20px;
+
+        p{
+            color: gray;
+            font-size: 19px;
+        }
+    }
+
+    .social_links .fa
+    {
+        color: #2e6db4;
+        font-size: 19px;
+        margin-left: 10px;
+    }
+
+}
+
+// add media query
+
+@media only screen and (max-width:916px){
+   
+    .team_section {
+        .Team {
+            flex-direction: column;
+            section {
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+    }
+
+}
+
+
+
+
+@media only screen and (max-width:800px) {
+  
+    .same_width
+    {
+        flex-direction: column;
+    
+        section{
+            width: 100%;
+          
+        }
+     
+    }
+
+    .more{
+        margin-bottom: 20px;
+    }
+
+
+    .third_section
+    .two_image
+    
+    {
+       flex-direction: column;
+    
+
+        section{
+            width: 100%;
+
+           
+        }
+    }
+
+}
+
+@media only screen and (max-width:720px){
+
+    nav
+    section
+    {
+       margin-left: 10px;
+    }
+
+    ul{
+        flex-direction: column;
+        margin-top: 50px;
+        // position: absolute;
+        background: #2f619b;
+        z-index: 999;
+       
+        li{
+            padding: 8px 0px;
+            display: none;
+            margin-left: 12px;
+        }
+      
+    }
+
+    .fa-navicon{
+        display: block;
+        margin-right: 10px;
+    }
+
+
+}

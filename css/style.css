@@ -1,0 +1,335 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 60vh;
+  background-image: url(../img/theory/dd.jpg);
+  background-size: cover;
+  border-top: 9px solid #4e82be;
+}
+
+header nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  margin-top: 25px;
+}
+
+header nav section {
+  width: 20%;
+}
+
+header nav section h4 {
+  font-weight: 100;
+  color: #fff;
+  font-size: 28px;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+header nav ul li {
+  margin-right: 30px;
+  list-style: none;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+header .banner_text {
+  width: 70%;
+  margin: 0 auto;
+  color: #fff;
+  position: relative;
+  top: 10%;
+  text-align: center;
+}
+
+header .banner_text h1 {
+  font-size: 48px;
+  font-weight: 200;
+}
+
+header .banner_text h6 {
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: 100;
+}
+
+.fa-navicon {
+  font-size: 23px;
+  background: none;
+  color: #fff;
+  display: none;
+}
+
+.more {
+  width: 100px;
+  height: 50px;
+  background: #2f619b;
+  color: #fff;
+  padding: 8px;
+  font-size: 17px;
+  font-family: "Raleway", sans-serif;
+}
+
+.same_width {
+  width: 80%;
+  margin: 0 auto;
+  padding: 60px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.same_width section {
+  width: 30%;
+}
+
+.same_width section h2 {
+  font-weight: 100;
+  color: #2f619b;
+}
+
+.same_width section p {
+  color: grey;
+  line-height: 26px;
+  padding: 20px 0px;
+}
+
+.same_width hr {
+  width: 1px;
+  background: grey;
+}
+
+.team_section {
+  width: 100%;
+  background: #2f619b;
+  padding: 75px 0px;
+}
+
+.team_section .Ispum {
+  text-align: center;
+}
+
+.team_section .Ispum h2 {
+  font-weight: 100;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.team_section .Ispum p {
+  color: silver;
+}
+
+.team_section .Team {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 30px;
+  text-align: center;
+  color: #fff;
+}
+
+.team_section .Team section {
+  width: 23%;
+  border: 1px solid silver;
+}
+
+.team_section .Team section img {
+  border-radius: 100%;
+  padding: 25px 0px;
+}
+
+.team_section .Team section h3 {
+  font-weight: 100;
+}
+
+.team_section .Team section p {
+  padding-bottom: 30px;
+}
+
+.third_section {
+  padding: 70px 0px;
+}
+
+.third_section .nunc {
+  text-align: center;
+}
+
+.third_section .nunc h2 {
+  font-weight: 100;
+  color: #4e82be;
+  margin-bottom: 10px;
+}
+
+.third_section .nunc p {
+  color: grey;
+}
+
+.third_section .two_image {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.third_section .two_image section {
+  width: 45%;
+}
+
+.third_section .two_image section img {
+  width: 100%;
+}
+
+.third_section .two_image section h3 {
+  color: #2e6db4;
+  margin-top: 15px;
+  font-weight: 100;
+  font-size: 27px;
+}
+
+.third_section .two_image section p {
+  color: grey;
+  padding: 20px 0px;
+  line-height: 26px;
+}
+
+footer {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-top: 1px solid grey;
+}
+
+footer section {
+  padding-top: 30px;
+  margin-bottom: 20px;
+}
+
+footer section p {
+  color: gray;
+  font-size: 19px;
+}
+
+footer .social_links .fa {
+  color: #2e6db4;
+  font-size: 19px;
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 916px) {
+  .team_section .Team {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .team_section .Team section {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .same_width {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .same_width section {
+    width: 100%;
+  }
+  .more {
+    margin-bottom: 20px;
+  }
+  .third_section
+.two_image {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .third_section
+.two_image section {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  nav
+section {
+    margin-left: 10px;
+  }
+  ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 50px;
+    background: #2f619b;
+    z-index: 999;
+  }
+  ul li {
+    padding: 8px 0px;
+    display: none;
+    margin-left: 12px;
+  }
+  .fa-navicon {
+    display: block;
+    margin-right: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
